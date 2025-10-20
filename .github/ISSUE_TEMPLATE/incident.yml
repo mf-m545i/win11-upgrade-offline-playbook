@@ -1,0 +1,34 @@
+name: Új esettanulmány (incident)
+description: Adj hozzá egy új Win11 upgrade incidentet JSON nélkül is – majd átvisszük a dataset-be.
+title: "[incident]: Rövid leírás"
+labels: ["incident","data"]
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Környezet (alaplap/CPU/BIOS mód/TPM/tároló)
+      placeholder: "Pl. ASUS A520M-A II, Ryzen 5 4500, UEFI, CSM off, AHCI, TPM 2.0"
+  - type: textarea
+    id: symptoms
+    attributes:
+      label: Tünetek
+      placeholder: "Hol akad el? Hibaüzenet?"
+  - type: textarea
+    id: findings
+    attributes:
+      label: Megállapítások
+      placeholder: "Eszközkezelő, pnputil kimenet, EFI méret stb."
+  - type: textarea
+    id: actions
+    attributes:
+      label: Megoldási lépések/parancsok
+      description: "Parancsok kódblokkal ha lehet."
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Eredmény
+      placeholder: "Mi oldotta meg végül?"
+  - type: textarea
+    id: prevention
+    attributes:
+      label: Megelőzés/javaslatok
